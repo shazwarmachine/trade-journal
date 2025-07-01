@@ -14,6 +14,7 @@ def login_url():
     This route is used to get the login URL for Kite Connect.
     It should return the URL that the user should visit to log in.
     """
+    print(login_init.kite.login_url())
     return { "login_url": login_init.kite.login_url() }
 @app.route('/login')
 def login():

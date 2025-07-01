@@ -3,7 +3,8 @@ from kiteconnect import KiteConnect
 
 logging.basicConfig(level=logging.DEBUG)
 
-kite = KiteConnect(api_key="35msa178vtcy64ws")
+kites = KiteConnect(api_key="35msa178vtcy64ws")
+kiteA = KiteConnect(api_key="35msa178vtcy64wsdsds")
 
 
 # Redirect the user to the login url obtained
@@ -12,13 +13,13 @@ kite = KiteConnect(api_key="35msa178vtcy64ws")
 # Once you have the request_token, obtain the access_token
 # as follows.
 
-print(kite.login_url())
-# data = kite.generate_session("USY5sK47LqE5b8zylt4FDQ2XY1aTY2Rv", api_secret="o816jxsbhtrcz0z163242ahvgvtd6w6w")
+# print(kite.login_url())
+# data = kite.generate_session("91svoqUXlLSuaxOTaBt6lHZIr87mCnJV", api_secret="o816jxsbhtrcz0z163242ahvgvtd6w6w")
 # print(data)
-kite.set_access_token("USY5sK47LqE5b8zylt4FDQ2XY1aTY2Rv")
-kite.holdings()
-kite.trades()
-kite.profile()
+# kite.set_access_token("USY5sK47LqE5b8zylt4FDQ2XY1aTY2Rv")
+# kite.holdings()
+# kite.trades()
+# kite.profile()
 
 def generate_session_using_request_token(request_token):
     """
@@ -26,8 +27,9 @@ def generate_session_using_request_token(request_token):
     Returns the access token and user ID.
     """
 
-    data = kite.generate_session(request_token, api_secret="o816jxsbhtrcz0z163242ahvgvtd6w6w")
-    kite.set_access_token(data["access_token"])
+    data = kites.generate_session(request_token, api_secret="o816jxsbhtrcz0z163242ahvgvtd6w6w")
+    data = kiteA.generate_session(request_token, api_secret="o816jxsbhtrcz0z163242ahvgvtd6w6w")
+    kites.set_access_token(data["access_token"])
 
 
 def login_init() :
