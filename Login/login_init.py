@@ -30,11 +30,11 @@ def generate_session_using_request_token(request_token):
     print(data["access_token"])
 
 
-def login_init():
-    """
-    Authenticates a user with the given username and password.
-    Returns True if authentication is successful, False otherwise.
-    """
-    # TODO: Implement authentication logic
-    return kite.holdings()
+# def login_init():
+#     """
+#     Authenticates a user with the given username and password.
+#     Returns True if authentication is successful, False otherwise.
+#     """
+#     # TODO: Implement authentication logic
+#     return kite.holdings()
     
