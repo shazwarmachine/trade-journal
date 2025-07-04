@@ -11,7 +11,7 @@ kite = KiteConnect(api_key="35msa178vtcy64ws")
 # from the registered redirect url after the login flow.
 # Once you have the request_token, obtain the access_token
 # as follows.
-print(kite.login_url())
+#print(kite.login_url())
 # data = kite.generate_session("USY5sK47LqE5b8zylt4FDQ2XY1aTY2Rv", api_secret="o816jxsbhtrcz0z163242ahvgvtd6w6w")
 # print(data)
 # kite.set_access_token("USY5sK47LqE5b8zylt4FDQ2XY1aTY2Rv")
