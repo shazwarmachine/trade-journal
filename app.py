@@ -16,6 +16,7 @@ def login_url():
     """
     print(login_init.kite.login_url())
     return { "login_url": login_init.kite.login_url() }
+    
 @app.route('/login')
 def login():
     # return "ascasca"
