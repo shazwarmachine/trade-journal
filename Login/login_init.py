@@ -37,3 +37,4 @@ def login_init():
     """
     # TODO: Implement authentication logic
     return kite.holdings()
+    
